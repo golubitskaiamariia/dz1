@@ -21,7 +21,7 @@ int main()
         cout << "A triangle is not an acute triangle2" << endl;
         }
     }
-    if (a == c){
+    else if (a == c){
         if(a > b){
         cout << "A triangle is an acute triangle3";
         }
@@ -29,7 +29,7 @@ int main()
         cout << "A triangle is not an acute triangle4";
         }
     }
-    if (b == c){
+    else if (b == c){
         if(b > a){
         cout << "A triangle is an acute triangle5";
         }
@@ -38,23 +38,23 @@ int main()
         }
     }
     
-    if((a == b) && (a==c) && (b==c)){
+    else if((a == b) && (a==c) && (b==c)){
         cout << "A triangle is an acute triangle7";
     }
 
-    if((a > b) && (a > c) && (b != c)){ //Проверяем сторону а на наибольшее значение
+    else if((a > b) && (a > c) && (b != c)){ //Проверяем сторону а на наибольшее значение
         if(pow(a, 2) < (pow(b, 2) + pow(c, 2))){ // Проверяем, чтобы квадрат наибольшей стороны был меньше суммы квадратов двух остальных
             cout << "A triangle is an acute triangle8";
         }
         else{ cout << "A triangle is not an acute triangle9";}
     }
-    if((b > a) && (b > c) && (a != c)){ //Проверяем сторону а на наибольшее значение
+    else if((b > a) && (b > c) && (a != c)){ //Проверяем сторону а на наибольшее значение
         if(pow(b, 2) < (pow(a, 2) + pow(c, 2))){ // Проверяем, чтобы квадрат наибольшей стороны был меньше суммы квадратов двух остальных
             cout << "A triangle is an acute triangle10";
         }
         else{ cout << "A triangle is not an acute triangle11";}
     }
-    if((c > a) && (c > b) && (a != b)){ //Проверяем сторону а на наибольшее значение
+    else if((c > a) && (c > b) && (a != b)){ //Проверяем сторону а на наибольшее значение
         if(pow(c, 2) < (pow(a, 2) + pow(b, 2))){ // Проверяем, чтобы квадрат наибольшей стороны был меньше суммы квадратов двух остальных
             cout << "A triangle is an acute triangle12";
         }
