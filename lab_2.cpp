@@ -14,5 +14,18 @@ int main()
         }
     std::cout << "Result: " << result << std::endl; //Вывод результата
 
+//Защита
+    int a = 5;
+    int b = 1000;
+    do{
+    int b, c;
+    c = a--;
+    b = c + (--a);
+    std::cout << "b do = " << b << "; a do = " << a << std::endl;
+    } while (a>0);
+
+    std::cout << b << std::endl;
+
     return 0;
+
 }
