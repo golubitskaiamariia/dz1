@@ -1,6 +1,7 @@
 # My needs
 ignored.cpp
 secret.json
+test.cpp
 
 # Prerequisites
 *.d
@@ -35,6 +36,3 @@ secret.json
 *.out
 *.app
 
-
-# My needs
-ignored.*
