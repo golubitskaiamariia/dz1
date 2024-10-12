@@ -3,6 +3,15 @@
 #include <iostream>
 #include <cmath> 
 
+
+double sqrt1(int n)
+{
+    double k;
+    k = sqrt(n);
+    return k;
+}
+
+
 int main()
 {
     double radian, degree; // Объявляем переменные с плавающей точкой. 
@@ -12,7 +21,7 @@ int main()
 
     degree = radian * (180.0 / M_PI); // Рассчитываем в градусах
     int d = static_cast<int>(degree); // Получаем целую часть градусов
-    
+    d += sqrt1(10);
     double minutesOfDegree = (degree - d) * 60.0; // Получаем дробную часть и преобразуем в минуты
     int m = static_cast<int>(minutesOfDegree); // Получаем целую часть минут
 
